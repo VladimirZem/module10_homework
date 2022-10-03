@@ -1,0 +1,13 @@
+const inputedValue = prompt ('Введите число')
+const value = +inputedValue
+if (typeof value == "number" && !isNaN(value)){
+    if(value == 0) {
+      console.log('ноль')
+    } else if (value % 2 == 0){
+      console.log('чётное')
+    } else {
+      console.log('нечётное')
+    }
+  } else {
+    console.log('Сказали же, ВВЕДИТЕ ЧИСЛО, а ты что написал?')
+  }
